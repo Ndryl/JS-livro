@@ -1,5 +1,7 @@
-function calculaPotencia(x = 2, y = x){
-    console.log(Math.pow(x, y));
+const v = 'valor 1';
+function funcao(x = v) {
+  const v = 'valor 2';
+  console.log(x);
 }
 
-calculaPotencia(5, 1);
+funcao(); // qual valor será mostrado?
