@@ -12,8 +12,9 @@ const contatos = [
       numero: '1234-5567'
     }
   ];
-  const [,Reinalda] = contatos;
-  function retorno({numero}){
-    console.log(numero);
-  }
-  retorno(Reinalda);
+  let tel_p_contato = contatos.reduce((refe, contato)=>{
+    let {numero} = contato;
+    refe.push(numero);
+    return refe;
+  }, []);
+  console.log(tel_p_contato);
